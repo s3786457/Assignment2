@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.LoginController">
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.LoginController">
     <children>
             <Label fx:id="isConnected" layoutX="23.0" layoutY="173.0" text="Status">
 
@@ -27,7 +28,28 @@
          </effect>
          <font>
             <Font name="System Font" size="13.0" />
-         </font></Button>
+         </font>
+         <padding>
+            <Insets right="3.0" />
+         </padding></Button>
+      <Label text="Username" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="57.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="-60.0" top="1.0" />
+         </padding>
+      </Label>
+      <Label layoutX="11.0" layoutY="67.0" text="Password" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="105.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="-60.0" top="1.0" />
+         </padding>
+      </Label>
+      <Label text="Login Form" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="10.0" layoutY="128.0" text="Register" />
+      <Hyperlink layoutX="20.0" layoutY="138.0" text="Forgotten Password?" AnchorPane.bottomAnchor="38.66666666666667" />
+
 
 
     </children>
