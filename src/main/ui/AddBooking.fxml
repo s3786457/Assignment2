@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="94.0" stroke="BLACK" strokeType="INSIDE" width="661.0" />
+      <Label layoutX="247.0" layoutY="24.0" prefHeight="45.0" prefWidth="167.0" text="Add Booking">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="28.0" layoutY="109.0" prefHeight="291.0" prefWidth="235.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="73.33334096272786" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.99999237060547" minWidth="10.0" prefWidth="141.99999237060547" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="51.333333333333336" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="51.666666666666664" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="223.00000000000003" minHeight="10.0" prefHeight="57.666666666666686" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="232.33333333333334" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="232.33333333333334" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="IDField" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="1" />
+            <Label fx:id="IDLabel" prefHeight="17.0" prefWidth="79.0" text="ID" />
+            <TextField fx:id="FNameField" layoutX="94.0" layoutY="22.0" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="LNameField" layoutX="94.0" layoutY="72.0" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="AgeField" layoutX="94.0" layoutY="72.0" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="UsernameField" layoutX="94.0" layoutY="125.0" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="FNameLabel" layoutX="10.0" layoutY="26.0" prefHeight="17.0" prefWidth="79.0" text="First Name" GridPane.rowIndex="1" />
+            <Label fx:id="LNameLabel" layoutX="10.0" layoutY="76.0" prefHeight="17.0" prefWidth="79.0" text="Last Name" GridPane.rowIndex="2" />
+            <Label fx:id="AgeLabel" layoutX="10.0" layoutY="129.0" prefHeight="17.0" prefWidth="79.0" text="Age" GridPane.rowIndex="3" />
+            <Label fx:id="UsernameLabel" layoutX="10.0" layoutY="189.0" prefHeight="17.0" prefWidth="79.0" text="Username" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="348.0" layoutY="129.0" prefHeight="207.0" prefWidth="258.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="135.33333333333331" minHeight="10.0" prefHeight="135.33333333333331" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="89.33333333333334" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <DatePicker fx:id="BookingField" prefHeight="28.0" prefWidth="129.0" GridPane.columnIndex="1" />
+            <Label fx:id="BookingLabel" prefHeight="37.0" prefWidth="102.0" text="Booking Date" />
+         </children>
+      </GridPane>
+      <Button fx:id="SubmitField" layoutX="545.0" layoutY="357.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="ClearField" layoutX="477.0" layoutY="357.0" mnemonicParsing="false" text="Clear" />
+   </children>
+</AnchorPane>

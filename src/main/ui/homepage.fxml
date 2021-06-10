@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ui.Homepage">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#97a921" height="98.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="28.0" layoutY="15.0" prefHeight="68.0" prefWidth="234.0" text="Hotdesking">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="383.0" layoutY="57.0" mnemonicParsing="false" text="Add Booking" />
+      <Button layoutX="479.0" layoutY="57.0" mnemonicParsing="false" text="Manage Booking" />
+   </children>
+</AnchorPane>

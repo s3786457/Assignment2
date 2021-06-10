@@ -2,6 +2,11 @@ package main.model;
 
 import main.SQLConnection;
 import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.lang.String;
 
 public class RegisterModel {
     Connection connection;
@@ -22,7 +27,7 @@ public class RegisterModel {
             return false;
         }
     }
-    public void isRegister(String username, String password, String question, String answer, String role, String firstName, String lastName) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
+    public void isRegister(String text, String username, String password, String question, String answer, String role, String firstName, String lastName) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         Statement stmt =null;
         try {
             stmt = connection.createStatement();

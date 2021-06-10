@@ -1,5 +1,6 @@
 package main.controller;
 
+import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Hyperlink;
@@ -16,6 +17,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import main.model.RegisterModel;
+
 import java.io.IOException;
 
 
@@ -27,7 +30,6 @@ public class LoginController implements Initializable {
     private TextField txtUsername;
     @FXML
     private TextField txtPassword;
-    private Hyperlink createAccountLabel;
     private Object e;
 
 
@@ -42,8 +44,11 @@ public class LoginController implements Initializable {
 
         }
 
-    }
 
+    User = new User(txtUsername.getText(), txtPassword.getText(), false);
+    boolean userIsAdmin = User.isUserAdmin(User);
+        User.setIs_admin(userIsAdmin);
+}
     public void Login(ActionEvent event) {
 
         try {
@@ -57,27 +62,53 @@ public class LoginController implements Initializable {
             e.printStackTrace();
         }
 
-            @FXML private Button RegisterEvent;
+        @FXML private Button forgetPass;
+        @FXML private Button isRegister;
 
-            @FXML public void RegisterEvent(ActionEvent event){
-            Scene scene = toRegister.getScene();
+        @FXML public void Register (ActionEvent event) {
+            try{
+                Scene scene = isRegister.getScene();
+                Window window = scene.getWindow();
+                Stage primaryStage = (Stage) window;
+
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("../view/register.fxml"));
+                } catch (IOException e) {
+                    System.out.println("FXML file error");
+                }
+                Scene register = new Scene(root, 372, 406);
+
+                primaryStage.setScene(register);
+
+                primaryStage.setTitle("Register Form");
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+        }
+
+        @FXML public void ForgotPassword (ActionEvent event){
+            Scene scene = forgetPass.getScene();
             Window window = scene.getWindow();
             Stage primaryStage = (Stage) window;
 
             Parent root = null;
             try {
-                root = FXMLLoader.load(getClass().getResource("../view/register.fxml"));
+                root = FXMLLoader.load(getClass().getResource("../view/forgot.fxml"));
             } catch (IOException e) {
                 System.out.println("FXML file error");
             }
-            Scene register = new Scene(root, 372, 406);
+            Scene forgetPass = new Scene(root, 372, 406);
 
-            primaryStage.setScene(register);
+            primaryStage.setScene(forgetPass);
 
-            primaryStage.setTitle("Register Form");
-        }
+            primaryStage.setTitle("Forgot Password Form");
         }
     }
+}
+
+
+
 
 
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="84.0" layoutY="14.0" text="Forgotten Password">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font></Label>
+      <TextField fx:id="txtID" layoutX="195.0" layoutY="52.0" promptText="ID" />
+      <Button layoutX="84.0" layoutY="166.0" mnemonicParsing="false" text="Reset Password" />
+      <Label layoutX="14.0" layoutY="56.0" text="Please Enter Your ID" />
+      <Label layoutX="14.0" layoutY="88.0" text="Please Enter Your Secret Answer" />
+      <TextField fx:id="txtSecret" layoutX="195.0" layoutY="84.0" promptText="Secret Ans" />
+      <TextField fx:id="txtPassword" layoutX="195.0" layoutY="118.0" promptText="Password" />
+      <Label layoutX="14.0" layoutY="122.0" text="Please Enter Your New Password" />
+   </children>
+</AnchorPane>

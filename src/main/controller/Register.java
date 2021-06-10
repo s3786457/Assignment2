@@ -11,10 +11,12 @@ package main.controller;
         import javafx.fxml.FXML;
         import javafx.scene.control.TextField;
         import main.model.RegisterModel;
+        import main.model.ForgotPasswordModel;
 
         import java.net.URL;
         import java.sql.SQLException;
         import java.util.ResourceBundle;
+        import java.lang.String;
 
 
 
@@ -35,13 +37,14 @@ public class Register {
     private TextField txtQuestion;
     @FXML
     private TextField txtAnswer;
+    @FXML
+    private TextField txtID;
 
 
-    public void RegisterEvent(ActionEvent event) {
-//(username,password,question,answer,role,first_name,last_name)
+    public void Register(ActionEvent event) {
         try {
             registerModel.isRegister(txtUsername.getText(), txtPassword.getText(), txtQuestion.getText()
-                    , txtAnswer.getText(), txtRole.getText(), txtFirstName.getText(), txtLastName.getText());
+                    , txtAnswer.getText(), txtID.getText(), txtRole.getText(), txtFirstName.getText(), txtLastName.getText());
         } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Register">
+    <children>
+        <Label fx:id="isConnected" layoutX="115.0" layoutY="25.0" text="Register">
+
+        </Label>
+        <TextField fx:id="txtFirstName" layoutX="78.0" layoutY="74.0" prefHeight="27.0" prefWidth="161.0" promptText="Firstname" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="74.0" />
+        <Button fx:id="Register" defaultButton="true" layoutX="107.0" layoutY="346.0" mnemonicParsing="false" onAction="#RegisterEvent" prefHeight="27.0" prefWidth="148.0" text="Register" textAlignment="CENTER" textFill="#f6f6f6" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="346.0">
+            <effect>
+                <Lighting bumpInput="$null">
+                    <light>
+                        <Light.Distant>
+                            <color>
+                                <Color red="0.9342105388641357" green="0.025950292125344276" blue="0.025950292125344276" />
+                            </color>
+                        </Light.Distant>
+                    </light>
+                </Lighting>
+            </effect>
+            <font>
+                <Font name="System Font" size="13.0" />
+            </font></Button>
+        <TextField fx:id="txtLastName" layoutX="78.0" layoutY="103.0" prefHeight="27.0" prefWidth="161.0" promptText="Lastname" />
+        <TextField fx:id="txtUsername" layoutX="78.0" layoutY="131.0" prefHeight="27.0" prefWidth="161.0" promptText="Username" />
+        <TextField fx:id="txtPassword" layoutX="78.0" layoutY="293.0" prefHeight="27.0" prefWidth="161.0" promptText="password" />
+        <TextField fx:id="txtID" layoutX="78.0" layoutY="47.0" prefHeight="27.0" prefWidth="161.0" promptText="ID" />
+        <TextField fx:id="txtQuestion" layoutX="78.0" layoutY="224.0" prefHeight="27.0" prefWidth="161.0" promptText="Question" />
+        <TextField fx:id="txtAnswer" layoutX="78.0" layoutY="258.0" prefHeight="27.0" prefWidth="161.0" promptText="Answer" />
+        <TextField fx:id="txtRole" layoutX="77.0" layoutY="190.0" prefHeight="27.0" prefWidth="161.0" promptText="Role" />
+
+
+    </children>
+
+</AnchorPane>
